@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    padding: 1em;
+}
+.row{
+    width:80%;
+    margin: 0 auto;
+    max-width:1550px;
+}
+.profile{
+   margin: 1em auto;
+}
+.profile__pic,.profile__stats{
+    width:80%;
+    margin: 1em auto;
+}
+.profile__pic img{
+    width:100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.profile__name,.profile__details{
+    text-align: center;
+}
+.profile__name{
+    font-size: 14px;
+    line-height: 17.07px;
+    color:#4E5130;
+    margin-bottom: 0.5em;
+}
+.profile__details{
+    font-size:10px;
+    line-height: 12.19px;
+    color:#A9A9A9;
+}
+.profile__stats{
+    display:flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+.posts,.followers,.following{
+    width:30%;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size:12px;
+    line-height: 14.63px;
+    border-radius: 4px;
+    padding: 1em ;
+    margin: 0 0.25em;
+    border-radius: 12px;
+}
+.stat__counter{
+    color:#4E5150;
+}
+.stat__description{
+  color: #bdbdbd;
+}
+
+/*styling the images grid */
+.parent img{
+    width:100%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.bottom__right img{
+    height: 40vh;
+}
+.top__section,.bottom__section{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+.top__left,.bottom__right{
+    flex:0 0 30%;
+}
+.top__right,.bottom__left{
+    flex:0 0 65%;
+}
+
+.bottom__left-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom__left-bottom > *{
+    flex:0 0 48%;
+}
+
+@media screen and (min-width:768px){
+    .profile{
+        width:80%;
+    }
+    .profile__pic{
+        width:40%;
+    }
+    .profile__stats{
+        width:50%;
+        justify-content: space-around;
+    }
+    .profile__name{
+        font-size: 24px;
+        line-height: 29.26px;
+    }
+    .profile__details{
+        font-size: 14px;
+        line-height: 12.19px;
+    }
+    .parent img{
+       height: 40vh;
+     }
+    .bottom__right img{
+      height: 80vh;
+    }
+}
